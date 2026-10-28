@@ -4,10 +4,6 @@ from django.shortcuts import render
 from django.views.generic import ListView
 from cafe_nv.models import Person
 
-def index(request):
-    return render(request, 'index.html')
-
-
 class PersonListView(ListView):
     model = Person
     template_name = "cafe_nv/person_list.html"
